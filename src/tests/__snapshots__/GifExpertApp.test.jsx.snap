@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Root Component Tests should return a categories list 1`] = `
+<Fragment>
+  <h1>
+    GifExpertApp
+  </h1>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol>
+    <GifGrid
+      category="Saitama"
+      key="Saitama"
+    />
+    <GifGrid
+      category="Goku"
+      key="Goku"
+    />
+  </ol>
+</Fragment>
+`;
+
+exports[`Root Component Tests should show the main component without issues 1`] = `
+<Fragment>
+  <h1>
+    GifExpertApp
+  </h1>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol />
+</Fragment>
+`;

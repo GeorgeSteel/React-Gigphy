@@ -14,8 +14,8 @@ function GifGrid({ category }) {
 
       {loading && <p>Loading...</p>}
 
-      <div className='card-grid'>
-        {data.map(gif => (
+      <div className="card-grid">
+        {data.map((gif) => (
           <GifGridItem key={gif.id} {...gif} />
         ))}
       </div>

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifGrid Component Tests should show items when the gifs are being loaded by using useFetchGifs 1`] = `
+<Fragment>
+  <h3>
+    Saitama
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="123"
+      key="123"
+      title="anything"
+      url="https://localhost/any/thing.gif"
+    />
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="otherthing"
+      url="https://localhost/other/thing.gif"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`GifGrid Component Tests should show the component without issues 1`] = `
+<Fragment>
+  <h3>
+    Saitama
+  </h3>
+  <p>
+    Loading...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;

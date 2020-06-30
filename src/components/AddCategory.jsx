@@ -3,19 +3,20 @@ import PropTypes from 'prop-types'
 
 function AddCategory({ setCategories }) {
   const [categorie, setCategorie] = useState('')
-  const handleChange = e => setCategorie(e.target.value)
-  const handleSubmit = e => {
+  const handleChange = (e) => setCategorie(e.target.value)
+  const handleSubmit = (e) => {
     e.preventDefault()
 
     if (categorie === '') return null
 
-    setCategories(prevState => [categorie, ...prevState])
+    setCategories((prevState) => [categorie, ...prevState])
     setCategorie('')
   }
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type='text' value={categorie} onChange={handleChange} />
+      <p>{categorie}</p>
+      <input type="text" value={categorie} onChange={handleChange} />
     </form>
   )
 }
